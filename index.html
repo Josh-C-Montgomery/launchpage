@@ -22,8 +22,36 @@
         font-size: 1.8em;
       }
 
-      .navbar-wrapper {
+      #topContainer {
+        background-image: url("background.jpeg");
         width: 100%;
+        background-size: cover;
+      }
+
+      #topRow {
+        margin-top: 100px;
+        text-align: center;
+      }
+
+      #topRow h1 {
+        font-size: 300%;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .marginTop {
+        margin-top: 30px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .title {
+        margin-top: 100px;
+        font-size: 300%;
       }
 
     </style>
@@ -48,7 +76,7 @@
             <li><a href="#download">Download</a></li>
           </ul>
 
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right marginTop">
             <div class="form-group">
               <input type="email" placeholder="Email" class="form-control" />
             </div>
@@ -61,11 +89,64 @@
         </div>
       </div>
     </div>
+
+    <div class="container contentContainer" id="topContainer">
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3" id="topRow">
+          <h1 class="marginTop">Stem innnovates</h1>
+          <p class="lead">Have you ever wanted to solve X problem? Stem can help.</p>
+          <p>Stem is an innovative approach to the way we solve problems. It uses a powerful combination of Y and Z technologies to help you overcome the obstacles in your way.</p>
+          <p class="bold marginTop">Interested? Join our mailing list.</a>
+          <form>
+            <div class="input-group marginTop">
+              <span class="input-group-addon">@</span>
+              <input type="email" class="form-control" placeholder="Your email" />
+            </div>
+            <input type="submit" class="btn btn-success btn-lg marginTop" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container contentContainer">
+      <div class="row">
+        <h1 class="center title">Why Stem is going to change your life.</h1>
+        <p class="center lead">Summary of why Stem is supa' dupa' awesome!</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 marginTop">
+          <h2><span class="glyphicon glyphicon-ok-sign"></span> header</h2>
+          <p>A simple description of a feature within the app. A simple description of a feature within the app. A simple description of a feature within the app.</p>
+
+          <button class="btn btn-success marginTop">Sign Up</button>
+        </div>
+        <div class="col-md-4 marginTop">
+          <h2><span class="glyphicon glyphicon-info-sign"></span> header</h2>
+          <p>A simple description of a feature within the app. A simple description of a feature within the app. A simple description of a feature within the app.</p>
+
+          <button class="btn btn-success marginTop">Sign Up</button>
+        </div>
+        <div class="col-md-4 marginTop">
+          <h2><span class="glyphicon glyphicon-question-sign"></span> header</h2>
+          <p>A simple description of a feature within the app. A simple description of a feature within the app. A simple description of a feature within the app.</p>
+
+          <button class="btn btn-success marginTop">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container contentContainer">
+    </div>
      
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+      $('.contentContainer').css("min-height", $(window).height());
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
